@@ -1,0 +1,27 @@
+Hello my name if Richard Twiggs. This is the homework 1 presentation for SIE-508
+
+I separated the inventory tool into six .py files; config, main, model, view, controller and inventory.csv which is referred to in the code as datafile. I chose to use a .csv file because rows and columns easily relate to sql patterns.
+
+So that I only have to hardcode the datafile name and its column names a single time, I store those global variables in config.py and import that into each program file that needs it.
+
+The datafile is called inventory.csv. If it does not exist the script will create it. So lets just delete it and demo that.
+
+You can see that inventory.csv exists and has bulk loaded five rows.
+
+Lets demo the rest:
+
+Insert a single item for bacon. When you display all rows you see bacon added to the end.
+
+Let's try to insert something that already exists. Bread already exists so let's try to insert it with a different price. You see the old record for bread exists but not a duplicate with the new price.
+
+Let's read a single item. This will run through the search function and if found, outputs the requested data. Searching for bacon we get bacon data. But searching for cookies we get a not found message.
+
+Looks like the price of bacon went up. Let's modify our inventory system. Before the price goes up, lets also buy some more and increase that quantity. Now a search for bacon shows the updated record. From 4.46 each qty 10 to 4.48 each qty 30.
+
+Try to update something that does not exist and you get the not found message.
+
+Let's delete bread and show all records. Bread is no longer here.
+Again, try to delete something that does not exist and receive the error message.
+
+Thanks for watching.
+
